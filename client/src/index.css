@@ -1713,13 +1713,16 @@ a {
 /* --- CAMPUS LIVE TICKER --- */
 .live-ticker-container {
   width: 100%;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.6); /* Darker base for better contrast */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-color);
-  padding: 8px 0;
+  padding: 12px 0;
   overflow: hidden;
   position: relative;
   z-index: 50;
+  margin-top: 72px; /* Fixed: Pushes ticker below the navbar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .ticker-wrapper {
@@ -1731,11 +1734,12 @@ a {
 .ticker-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 0 40px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  gap: 16px;
+  padding: 0 60px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  border-right: 1px solid var(--glass-border);
 }
 
 .live-indicator {
