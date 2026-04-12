@@ -1,0 +1,8 @@
+{
+  "short_name": "QuadSwap",
+  "name": "QuadSwap Campus Marketplace",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4F46E5",
+  "background_color": "#ffffff"
+}
